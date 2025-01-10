@@ -8,6 +8,7 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Webflow" name="generator"/>
 		<link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css"/>
+		<link href="{{ asset('css/extra.css')}}" rel="stylesheet" type="text/css"/>
 		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -101,6 +102,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="whatsapp-container">
+			<a href="https://api.whatsapp.com/send?phone=51988069143&text=Hola%20PopeyeCargos,%20tengo%20una%20consulta." target="_blank" class="whatsapp-button">
+				<img src="{{ asset('img/whatsapp-icon.png') }}" alt="WhatsApp" class="whatsapp-icon">
+			</a>
+			<div class="whatsapp-text">¡Chatea con nosotros!</div>
+		</div>			
 		<script src="{{ asset('js/jquery.js') }}" type="text/javascript" crossorigin="anonymous"></script>
         <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
 	</body>
