@@ -15,6 +15,7 @@
         <script type="text/javascript">WebFont.load({ google: { families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Inter:regular,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
 		<link href="{{ asset('img/favicon.png') }}" rel="shortcut icon" type="image/x-icon"/>
 		<link href="{{ asset('img/favicon.svg') }}" rel="apple-touch-icon"/>
+		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="navbar-fixed @yield('body-class', '') w-nav">
@@ -110,5 +111,7 @@
 		</div>			
 		<script src="{{ asset('js/jquery.js') }}" type="text/javascript" crossorigin="anonymous"></script>
         <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+		<script src="{{ asset('js/extra.js') }}" type="text/javascript"></script>
 	</body>
 </html>

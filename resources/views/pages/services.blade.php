@@ -8,8 +8,8 @@
 <div class="inner-banner">
 	<div class="base-container w-container">
 		<div class="inner-banner-wrap">
-			<h1 class="inner-title">Servicios</h1>
-			<p class="inner-description">
+			<h1 data-aos="zoom-in" class="inner-title">Servicios</h1>
+			<p class="inner-description" data-aos="zoom-in-left">
 				En PopeyeCargos SAC, ofrecemos una amplia gama de servicios de transporte y logística diseñados para satisfacer las necesidades de nuestros clientes en todo el Perú. Desde transporte terrestre hasta soluciones de almacenaje, nuestro objetivo es brindar un servicio seguro, puntual y eficiente.
 				<br><br>
 				Con años de experiencia en el sector, trabajamos para garantizar que cada envío llegue a su destino en óptimas condiciones. PopeyeCargos SAC es más que un servicio de transporte, somos tu socio estratégico en logística. ¡Confía en nosotros para transportar tus mercancías con excelencia!
@@ -21,7 +21,7 @@
 	<div class="base-container w-container">
 		<div class="w-dyn-list">
 			<div role="list" class="service-list-wrapper w-dyn-items">
-				<div role="listitem" class="service-item w-dyn-item">
+				<div data-aos="zoom-in-up" role="listitem" class="service-item w-dyn-item">
 					<img src="{{ asset('img/terrestre.jpg') }}" loading="lazy" alt="Transporte Terrestre" class="service-list-image">
 					<div class="service-list-content">
 						<a href="/services/terrestre" class="w-inline-block">
@@ -34,7 +34,7 @@
 						</a>
 					</div>
 				</div>
-				<div role="listitem" class="service-item w-dyn-item">
+				<div data-aos="zoom-in-up" role="listitem" class="service-item w-dyn-item">
 					<img src="{{ asset('img/almacenaje.jpg') }}" loading="lazy" alt="Servicio de Almacenaje" class="service-list-image">
 					<div class="service-list-content">
 						<a href="/services/almacenaje" class="w-inline-block">
@@ -47,7 +47,7 @@
 						</a>
 					</div>
 				</div>
-				<div role="listitem" class="service-item w-dyn-item">
+				<div data-aos="zoom-in-up" role="listitem" class="service-item w-dyn-item">
 					<img src="{{ asset('img/paqueteria.jpg') }}" loading="lazy" alt="Servicio de Paquetería" class="service-list-image">
 					<div class="service-list-content">
 						<a href="/services/paqueteria" class="w-inline-block">
@@ -60,7 +60,7 @@
 						</a>
 					</div>
 				</div>
-				<div role="listitem" class="service-item w-dyn-item">
+				<div data-aos="zoom-in-up" role="listitem" class="service-item w-dyn-item">
 					<img src="{{ asset('img/express.jpg') }}" loading="lazy" alt="Servicio Express" class="service-list-image">
 					<div class="service-list-content">
 						<a href="/services/express" class="w-inline-block">
@@ -73,7 +73,7 @@
 						</a>
 					</div>
 				</div>
-				<div role="listitem" class="service-item w-dyn-item">
+				<div data-aos="zoom-in-up" role="listitem" class="service-item w-dyn-item">
 					<img src="{{ asset('img/regional.jpg') }}" loading="lazy" alt="Cobertura Regional" class="service-list-image">
 					<div class="service-list-content">
 						<a href="/services/regional" class="w-inline-block">
@@ -86,7 +86,7 @@
 						</a>
 					</div>
 				</div>
-				<div role="listitem" class="service-item w-dyn-item">
+				<div data-aos="zoom-in-up" role="listitem" class="service-item w-dyn-item">
 					<img src="{{ asset('img/atencion.jpg') }}" loading="lazy" alt="Atención Personalizada" class="service-list-image">
 					<div class="service-list-content">
 						<a href="/services/atencion" class="w-inline-block">
