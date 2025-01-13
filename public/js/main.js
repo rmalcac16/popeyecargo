@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionamos los botones y el overlay
+    AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: false,
+    });
+
     const navButton = document.querySelector(".menu-button img");
     const closeMenuButton = document.querySelector(".close-menu-button");
     const navOverlay = document.querySelector(".w-nav-overlay");
 
-    // Función para abrir el menú
     function openMenu() {
         navOverlay.style.display = "block";
         navOverlay.style.height = "100vh";
         navOverlay.style.width = "320px";
         navOverlay.style.position = "fixed";
         navOverlay.style.top = "0";
-        navOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)"; // Opcional, para estilo
+        navOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     }
 
-    // Función para cerrar el menú
     function closeMenu() {
         navOverlay.style.display = "none";
         navOverlay.style.height = "0";
         navOverlay.style.width = "0";
     }
 
-    // Función para alternar el menú
     function toggleMenu() {
         const isMenuOpen = navOverlay.style.display === "block";
         if (isMenuOpen) {
@@ -31,17 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Abrir el menú al hacer clic en el botón de apertura
     if (navButton) {
         navButton.addEventListener("click", toggleMenu);
     }
 
-    // Cerrar el menú al hacer clic en el botón de cierre
     if (closeMenuButton) {
         closeMenuButton.addEventListener("click", closeMenu);
     }
 
-    // Slider Functionality
     const slides = document.querySelectorAll(".slider .slide");
     const leftArrow = document.querySelector(".left-arrow");
     const rightArrow = document.querySelector(".right-arrow");
@@ -66,35 +65,26 @@ document.addEventListener("DOMContentLoaded", function () {
     if (slides.length > 0) {
         showSlide(currentSlide);
 
-        // Event listeners for navigation arrows
         if (rightArrow) {
-            rightArrow.addEventListener("click", function () {
-                nextSlide();
-            });
+            rightArrow.addEventListener("click", nextSlide);
         }
 
         if (leftArrow) {
-            leftArrow.addEventListener("click", function () {
-                previousSlide();
-            });
+            leftArrow.addEventListener("click", previousSlide);
         }
     }
 
-    // Selecciona todos los elementos del acordeón
     const accordionItems = document.querySelectorAll(".accordion-item");
 
     accordionItems.forEach((item) => {
-        // Selecciona el botón de toggle, el panel correspondiente y el número
         const toggle = item.querySelector(".accordion-toggle");
         const panel = item.querySelector(".accordion-list");
         const accordionNumber = item.querySelector(".accordion-number");
         const accordionIcon = item.querySelector(".accordion-icon");
 
-        // Agrega el evento de clic al toggle
         toggle.addEventListener("click", function () {
             const isOpen = toggle.getAttribute("aria-expanded") === "true";
 
-            // Cierra todos los acordeones abiertos
             accordionItems.forEach((otherItem) => {
                 const otherToggle =
                     otherItem.querySelector(".accordion-toggle");
@@ -112,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 otherIcon.style.transform = "rotate(0deg)";
             });
 
-            // Si está cerrado, ábrelo
             if (!isOpen) {
                 toggle.setAttribute("aria-expanded", "true");
                 panel.style.height = panel.scrollHeight + "px";
@@ -122,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 toggle.style.color = "var(--primary)";
                 accordionIcon.style.transform = "rotate(180deg)";
             } else {
-                // Si está abierto, ciérralo
                 toggle.setAttribute("aria-expanded", "false");
                 panel.style.height = "0px";
                 accordionNumber.style.color = "var(--dark-gray)";
@@ -133,4 +121,78 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabTitle = document.querySelector("#tab-title");
+    const tabContent = document.querySelector("#tab-content");
+
+    function activateTab(tabButton) {
+        tabButtons.forEach((button) => button.classList.remove("active"));
+        tabButton.classList.add("active");
+
+        const title = tabButton.getAttribute("data-title");
+        const content = tabButton.getAttribute("data-content");
+
+        tabTitle.innerHTML = `<div data-aos="zoom-in">${title}</div>`;
+        tabContent.innerHTML = `<div data-aos="fade-up">${content}</div>`;
+
+        setTimeout(() => AOS.refresh(), 100);
+    }
+
+    if (tabButtons.length > 0) {
+        activateTab(tabButtons[0]);
+    }
+
+    tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            if (!button.classList.contains("active")) {
+                activateTab(button);
+            }
+        });
+    });
+
+    const locationTabs = document.querySelectorAll(".location-tab");
+    const pane = document.querySelector(".location-tab-pane");
+    const paneTitle = pane.querySelector(".location-tab-pane-title");
+    const paneAddress = pane.querySelector(".paragraph-large");
+    const panePhone = pane.querySelector(
+        ".location-tab-pane-info .location-link"
+    );
+    const paneEmail = pane.querySelectorAll(
+        ".location-tab-pane-info .location-link"
+    )[1];
+
+    locationTabs[0].classList.add("w--current");
+    updatePaneContent(locationTabs[0]);
+
+    locationTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            if (tab.classList.contains("w--current")) return;
+
+            locationTabs.forEach((tab) => tab.classList.remove("w--current"));
+            tab.classList.add("w--current");
+            updatePaneContent(tab);
+        });
+    });
+
+    function updatePaneContent(tab) {
+        const location = tab.getAttribute("data-location");
+        const province = tab.getAttribute("data-province");
+        const address = tab.getAttribute("data-address");
+        const phone = tab.getAttribute("data-phone");
+        const email = tab.getAttribute("data-email");
+        const image = tab.getAttribute("data-image");
+
+        pane.style.backgroundImage = `url('${image}')`;
+        paneTitle.innerHTML = `<div data-aos="fade-up">${
+            province ? `${location} - ${province}` : location
+        }</div>`;
+        paneAddress.innerHTML = `<div data-aos="fade-up" data-aos-delay="100">${address}</div>`;
+        panePhone.innerHTML = `<div data-aos="fade-up" data-aos-delay="200">${phone}</div>`;
+        panePhone.href = `tel:${phone}`;
+        paneEmail.innerHTML = `<div data-aos="fade-up" data-aos-delay="300">${email}</div>`;
+        paneEmail.href = `mailto:${email}`;
+
+        setTimeout(() => AOS.refresh(), 100);
+    }
 });

@@ -13,7 +13,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
@@ -3248,40 +3247,6 @@ blockquote {
     text-align: right;
 }
 
-.footer {
-    background-color: var(--text-dark);
-    text-align: center;
-    align-items: flex-start;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.footer-rights-wrapper {
-    text-align: left;
-    flex-flow: wrap;
-    align-items: center;
-    width: 100%;
-}
-
-.footer-rights {
-    color: var(--white);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    display: inline-block;
-}
-
-.footer-copyright {
-    color: var(--white);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-}
-
 .body-with-background {
     background-color: #f9f9fa;
 }
@@ -3777,72 +3742,6 @@ blockquote {
     display: flex;
 }
 
-.footer-link {
-    color: var(--white);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding-bottom: 0;
-    font-size: 14px;
-    line-height: 21px;
-    transition: all 0.3s;
-    display: inline-block;
-}
-
-.footer-link:hover {
-    color: var(--primary);
-}
-
-.footer-social-icons-wrapper {
-    justify-content: center;
-    margin-top: 30px;
-    display: flex;
-}
-
-.footer-wrapper {
-    grid-column-gap: 60px;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 85px;
-    display: flex;
-}
-
-.footer-brand-wrapper {
-    grid-column-gap: 60px;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 25%;
-    display: flex;
-}
-
-.footer-brand {
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.footer-brand.w--current {
-    color: #fff;
-    padding-left: 0;
-    font-family: Poppins;
-}
-
-.footer-social-icon {
-    color: #fff;
-    margin-right: 30px;
-    font-family: "Fa brands 400", sans-serif;
-    font-size: 20px;
-    line-height: 1em;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.footer-social-icon:hover {
-    color: var(--primary);
-}
-
-.footer-logo {
-    height: 53px;
-}
-
 .without-top-spacing {
     padding-top: 0;
 }
@@ -3875,18 +3774,6 @@ blockquote {
 .search-result-wrapper {
     width: 100%;
     margin-top: 40px;
-}
-
-.footer-logo-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-}
-
-.footer-brand-description {
-    color: var(--white);
-    text-align: left;
-    font-size: 18px;
 }
 
 .list-item-circle {
@@ -5534,72 +5421,6 @@ blockquote {
     left: 140px;
 }
 
-.footer-location {
-    color: var(--white);
-    text-align: left;
-    max-width: 220px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-.footer-number {
-    color: var(--white);
-    text-align: left;
-    margin-top: 20px;
-    font-size: 18px;
-    display: block;
-}
-
-.footer-number:hover {
-    color: var(--primary);
-}
-
-.footer-title {
-    color: var(--white);
-    text-align: left;
-}
-
-.footer-description {
-    color: var(--gray);
-    text-align: left;
-    max-width: 270px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-.footer-location-wrap {
-    width: 25%;
-}
-
-.footer-contact-wrap {
-    width: 50%;
-}
-
-.footer-text-field {
-    color: var(--gray);
-    background-color: #0000;
-    border: 1px solid #878787;
-    border-radius: 60px;
-    height: 51px;
-    margin-bottom: 0;
-    padding: 12px 30px;
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    line-height: 1.5em;
-}
-
-.footer-text-field:focus {
-    border-color: var(--primary);
-}
-
-.footer-nav-wrap {
-    grid-column-gap: 50px;
-    margin-bottom: 50px;
-    display: flex;
-}
-
 .service-image {
     margin-bottom: 10px;
 }
@@ -6201,12 +6022,6 @@ blockquote {
     padding-bottom: 270px;
 }
 
-.footer-with-cta {
-    background-color: var(--text-dark);
-    margin-top: 190px;
-    padding-bottom: 80px;
-}
-
 .cta-wrapper {
     background-color: var(--primary);
     border-radius: 10px;
@@ -6768,7 +6583,6 @@ blockquote {
 }
 
 .location-tabs {
-    align-items: flex-end;
     display: flex;
     position: relative;
 }
@@ -7243,20 +7057,12 @@ blockquote {
         height: 320px;
     }
 
-    .footer-rights-wrapper {
-        margin-top: 30px;
-    }
-
     .style-guide-buttons-wrapper {
         flex-wrap: nowrap;
     }
 
     .banner-title-wrapper {
         margin-top: 0;
-    }
-
-    .footer-wrapper {
-        grid-column-gap: 100px;
     }
 
     .without-top-spacing {
@@ -7568,11 +7374,6 @@ blockquote {
         padding-bottom: 150px;
     }
 
-    .footer {
-        padding-top: 130px;
-        padding-bottom: 130px;
-    }
-
     .testimonials-slider-author {
         margin-top: 30px;
     }
@@ -7640,10 +7441,6 @@ blockquote {
 
     .banner-image {
         height: 500px;
-    }
-
-    .footer-with-cta {
-        padding-bottom: 130px;
     }
 
     .cta-wrapper {
@@ -7741,15 +7538,6 @@ blockquote {
     .coming-soon-wrapper {
         padding-left: 100px;
         padding-right: 100px;
-    }
-
-    .footer {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-
-    .footer-brand-wrapper {
-        width: 30%;
     }
 
     .service-list-2-bottom-contacts {
@@ -8276,22 +8064,6 @@ blockquote {
         margin-bottom: 40px;
     }
 
-    .footer-social-icons-wrapper {
-        margin-top: 10px;
-    }
-
-    .footer-wrapper {
-        grid-column-gap: 30px;
-        grid-row-gap: 40px;
-        flex-wrap: wrap;
-        margin-bottom: 45px;
-    }
-
-    .footer-brand-wrapper {
-        grid-column-gap: 0px;
-        width: 47.5%;
-    }
-
     .search-input:focus {
         border: 1px solid var(--primary);
     }
@@ -8787,18 +8559,6 @@ blockquote {
     .help-animation {
         width: 40%;
         margin-top: 50px;
-    }
-
-    .footer-description {
-        max-width: none;
-    }
-
-    .footer-location-wrap {
-        width: 35%;
-    }
-
-    .footer-contact-wrap {
-        width: 100%;
     }
 
     .home-second-banner {
@@ -9398,15 +9158,6 @@ blockquote {
         width: 100%;
     }
 
-    .footer {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .footer-rights-wrapper {
-        flex-wrap: wrap;
-    }
-
     .section-title-wrapper {
         margin-bottom: 40px;
     }
@@ -9517,40 +9268,8 @@ blockquote {
         margin-bottom: 20px;
     }
 
-    .footer-social-icons-wrapper {
-        grid-column-gap: 30px;
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .footer-wrapper {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .footer-brand-wrapper {
-        width: 100%;
-    }
-
-    .footer-brand {
-        padding-left: 0;
-    }
-
-    .footer-social-icon {
-        margin-right: 0;
-    }
-
     .search-result-item {
         margin-bottom: 20px;
-    }
-
-    .footer-logo-wrapper {
-        align-items: center;
-        width: 100%;
-    }
-
-    .footer-brand-description {
-        text-align: center;
     }
 
     .service-list-wrapper {
@@ -9951,19 +9670,6 @@ blockquote {
 
     .pricing-check-list {
         margin-bottom: 40px;
-    }
-
-    .footer-location {
-        max-width: none;
-    }
-
-    .footer-location-wrap {
-        width: 100%;
-    }
-
-    .footer-nav-wrap {
-        grid-column-gap: 30px;
-        margin-bottom: 30px;
     }
 
     .home-second-banner {
@@ -10570,24 +10276,6 @@ blockquote {
         width: 100%;
     }
 
-    .footer {
-        text-align: left;
-    }
-
-    .footer-rights-wrapper {
-        flex-wrap: wrap;
-        margin-top: 0;
-    }
-
-    .footer-rights {
-        margin-bottom: 10px;
-    }
-
-    .footer-copyright {
-        justify-content: center;
-        width: 100%;
-    }
-
     .section-subtitle.without-bottom-space {
         text-align: center;
     }
@@ -10612,19 +10300,6 @@ blockquote {
 
     .contacts-location-slider {
         padding-right: 70px;
-    }
-
-    .footer-social-icons-wrapper {
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    .footer-wrapper {
-        margin-bottom: 25px;
-    }
-
-    .footer-brand-wrapper {
-        flex-direction: column;
     }
 
     .service-list-process-wrap {
@@ -10796,11 +10471,6 @@ blockquote {
 
     .accomplishments-card.big {
         width: 100%;
-    }
-
-    .footer-nav-wrap {
-        grid-row-gap: 10px;
-        flex-wrap: wrap;
     }
 
     .services-cards-wrap {

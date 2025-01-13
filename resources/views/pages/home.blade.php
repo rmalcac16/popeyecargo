@@ -59,21 +59,21 @@
                 <img src="https://cdn.prod.website-files.com/62f0e3371ad4ab59bf6b21b0/62f10a011ea8faf569b1d2d4_delivery_transport_icon.svg" loading="lazy" alt="Icono de Transporte Terrestre" class="service-icon"/>
                 <div>
                     <h4>Transporte Terrestre</h4>
-                    <p>Ofrecemos soluciones logísticas eficientes, conectando ciudades y regiones en todo Perú con seguridad y puntualidad.</p>
+                    <p>Ofrecemos soluciones logísticas eficientes, conectando ciudades y varias regiones del Perú con seguridad y puntualidad.</p>
                 </div>
             </div>
             <div class="features-item" data-aos="fade-up">
                 <img src="https://cdn.prod.website-files.com/62f0e3371ad4ab59bf6b21b0/62fcab6b72b68d71616925eb_Location.svg" loading="lazy" alt="Icono de Cobertura Nacional" class="service-icon"/>
                 <div>
                     <h4>Cobertura Nacional</h4>
-                    <p>Estamos presentes en todas las regiones del país, llegando a las ciudades más remotas con nuestro servicio confiable.</p>
+                    <p>Estamos presentes en muchas regiones del país, llegando a las ciudades más remotas con nuestro servicio confiable.</p>
                 </div>
             </div>  
             <div class="features-item" data-aos="fade-up">
                 <img src="https://cdn.prod.website-files.com/62f0e3371ad4ab59bf6b21b0/62fcac2fea0f265609c23ee5_Delivery.svg" loading="lazy" alt="Icono de Entrega Rápida" class="service-icon"/>
                 <div>
                     <h4>Entregas Rápidas</h4>
-                    <p>Optimizamos nuestras rutas y tiempos para garantizar entregas ágiles y sin contratiempos en todo Perú.</p>
+                    <p>Optimizamos nuestras rutas y tiempos para garantizar entregas ágiles y sin contratiempos en varias regiones del Perú.</p>
                 </div>
             </div>
             <div class="features-item" data-aos="fade-up">

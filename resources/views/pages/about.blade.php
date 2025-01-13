@@ -7,16 +7,18 @@
 @section('content')
 <div class="inner-banner">
 	<div class="base-container w-container">
+        <div class="tab-buttons">
+            <button class="tab-button" data-aos="zoom-in" data-title="Sobre Nosotros" data-content="En PopeyeCargos SAC, somos líderes en transporte terrestre, conectando cada rincón del Perú con soluciones logísticas eficientes y personalizadas. Nuestra misión es garantizar la seguridad, puntualidad y excelencia en cada envío, asegurando que tus mercancías lleguen a su destino en las mejores condiciones.<br><br>Con más de una década de experiencia, trabajamos con un equipo comprometido que entiende la importancia de tu carga. En PopeyeCargos SAC, no solo transportamos bienes, también construimos confianza y relaciones duraderas con nuestros clientes. ¡Déjanos ser tu socio confiable en logística y transporte!">Sobre Nosotros</button>
+            <button class="tab-button" data-aos="zoom-in" data-title="Misión" data-content="Garantizar la seguridad, puntualidad y excelencia en cada envío, asegurando la satisfacción de nuestros clientes">Misión</button>
+			<button class="tab-button" data-aos="zoom-in" data-title="Visión" data-content="Ser líderes en transporte terrestre a nivel nacional, brindando servicios de calidad y confianza">Visión</button>
+			<button class="tab-button" data-aos="zoom-in" data-title="Valores" data-content="Compromiso, puntualidad, seguridad y excelencia en cada uno de nuestros servicios">Valores</button>
+        </div>
 		<div class="inner-banner-wrap">
-			<h1 class="inner-title" data-aos="zoom-in-up" >Sobre Nosotros</h1>
-			<p class="inner-description" data-aos="fade-left" >
-				En PopeyeCargos SAC, somos líderes en transporte terrestre, conectando cada rincón del Perú con soluciones logísticas eficientes y personalizadas. Nuestra misión es garantizar la seguridad, puntualidad y excelencia en cada envío, asegurando que tus mercancías lleguen a su destino en las mejores condiciones.
-				<br><br>
-				Con más de una década de experiencia, trabajamos con un equipo comprometido que entiende la importancia de tu carga. En PopeyeCargos SAC, no solo transportamos bienes, también construimos confianza y relaciones duraderas con nuestros clientes. ¡Déjanos ser tu socio confiable en logística y transporte!
-			</p>
+			<h1 id="tab-title" class="inner-title" data-aos="zoom-in-up"></h1>
+            <p id="tab-content" class="inner-description" data-aos="fade-left"></p>
 		</div>
 	</div>
-	<img  data-aos="zoom-in" class="banner-image" src="{{ asset('img/nosotros.jpg') }}" alt="Camión de transporte">
+	<img data-aos="zoom-in" class="banner-image" src="{{ asset('img/nosotros.jpg') }}" alt="Camión de transporte">
 </div>
 <div class="inner-section primary-light-bg">
     <div class="base-container w-container">

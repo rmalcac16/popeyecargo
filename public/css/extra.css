@@ -64,4 +64,166 @@
     }
 }
 
-/* Animaciones */
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 0;
+}
+
+.footer .p-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.footer .p-container .footer-wrapper {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    gap: 5rem;
+}
+.footer .p-container .footer-wrapper h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.footer .p-container .footer-wrapper .footer-description {
+    text-align: center;
+}
+.footer .p-container .footer-wrapper .footer-brand {
+    min-width: 30%;
+}
+.footer
+    .p-container
+    .footer-wrapper
+    .footer-brand
+    .footer-logo-container
+    .footer-logo {
+    width: 100%;
+}
+.footer .p-container .footer-wrapper .footer-brand .footer-logo-container p {
+    color: #cfcfcf;
+}
+.footer .p-container .footer-wrapper .footer-nav {
+    max-width: 15%;
+}
+
+.footer .p-container .footer-wrapper .footer-nav .footer-link-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.footer .p-container .footer-wrapper .footer-nav .footer-link-container i,
+.footer .p-container .footer-wrapper .footer-contact div i {
+    font-size: 0.7rem;
+    color: #ea384c;
+}
+
+.footer .p-container .footer-wrapper .footer-nav .footer-link {
+    font-size: 0.8rem;
+    display: block;
+    color: #cfcfcf;
+}
+.footer .p-container .footer-wrapper .footer-contact {
+    max-width: 25%;
+}
+.footer .p-container .footer-wrapper .footer-contact div {
+    padding-bottom: calc(34px / 2);
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 1rem;
+    border-bottom: 1px solid #ffffff30;
+}
+.footer .p-container .footer-wrapper .footer-contact div:not(:first-child) {
+    margin-top: calc(34px / 2);
+}
+
+.footer .p-container .footer-wrapper .footer-contact div p,
+.footer .p-container .footer-wrapper .footer-contact div a {
+    margin: 0;
+    color: #cfcfcf;
+    font-size: 0.9rem;
+}
+
+.footer .p-container .footer-wrapper .footer-conditions p,
+.footer .p-container .footer-wrapper .footer-conditions a {
+    color: #cfcfcf;
+    font-size: 0.9rem;
+}
+
+.footer .p-container .footer-wrapper .footer-conditions a {
+    font-weight: bold;
+    color: #ea384c;
+}
+
+.footer .footer-copy-wrapper {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #ffffff30;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+/* Tab Content */
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #333;
+}
+
+.tab-content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.location-tabs-content {
+    min-height: 85vh;
+}
+
+.location-tab {
+    cursor: pointer;
+}
+
+.location-tab-pane {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    height: 85vh;
+}
+
+.location-tab-pane:not(.w--tab-active) {
+    pointer-events: none;
+    height: 0;
+    opacity: 0;
+}

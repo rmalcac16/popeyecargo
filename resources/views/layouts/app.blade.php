@@ -16,6 +16,7 @@
 		<link href="{{ asset('img/favicon.png') }}" rel="shortcut icon" type="image/x-icon"/>
 		<link href="{{ asset('img/favicon.svg') }}" rel="apple-touch-icon"/>
 		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<div class="navbar-fixed @yield('body-class', '') w-nav">
@@ -68,38 +69,64 @@
         @yield('content')
 	
 		<div class="footer">
-			<div class="w-container">
+			<div class="p-container">
 				<div class="footer-wrapper">
-					<div class="footer-brand-wrapper">
-						<div class="footer-logo-wrapper">
-							<a href="/home-1" class="footer-brand w-nav-brand">
-                                <img src="{{ asset('img/logo.svg') }}" loading="lazy" alt="Logo" height="30" class="footer-logo"/></a>
-							<p class="footer-brand-description">Empresa de transporte con experiencia en el servicio de transporte de mercadería</p>
+					<div class="footer-brand">
+						<div class="footer-logo-container">
+							<a href="{{ route('home') }}" class="nav-brand">
+								<img src="http://popeyecargo.test/img/logo.svg" loading="lazy" alt="Logo" class="footer-logo">
+							</a>
+							<p class="footer-description">
+								Empresa De Transporte Con Experiencia Brindando Eficiencia En El Servicio Del Traslado De Mercaderia
+							</p>
 						</div>
-						<div class="footer-social-icons-wrapper">
-                            <a href="https://www.instagram.com/popeyecargos.envia" target="_blank" class="footer-social-icon"></a>
-                            <a href="https://www.facebook.com/popeye.cargo" target="_blank" class="footer-social-icon"></a>
-                            <a href="https://www.tiktok.com/@popeyecargosac" target="_blank" class="footer-social-icon"></a>
-                        </div>
 					</div>
-					<div class="footer-location-wrap">
-						<p class="footer-location">Cal. Ignacio Cossio 1505 - La Victoria</p>
-						<a href="tel:988069143" class="footer-number">+51 988 069 143</a>
-                        <a href="tel:982982321" class="footer-number">+51 982 982 321</a>
+					<div class="footer-nav">
+						<h2>Enlaces</h2>
+						<div class="footer-link-container">
+							<i class="fas fa-chevron-right"></i>
+							<a href="{{ route('about') }}" class="footer-link">Nosotros</a>
+						</div>
+						<div class="footer-link-container">
+							<i class="fas fa-chevron-right"></i>
+							<a href="{{ route('services') }}" class="footer-link">Servicios</a>
+						</div>
+						<div class="footer-link-container">
+							<i class="fas fa-chevron-right"></i>
+							<a href="{{ route('location') }}" class="footer-link">Agéncias</a>
+						</div>
+						<div class="footer-link-container">
+							<i class="fas fa-chevron-right"></i>
+							<a href="{{ route('contact') }}" class="footer-link">Contáctanos</a>
+						</div>
 					</div>
-					<div class="footer-contact-wrap">
-						<h2 class="footer-title">Contáctanos</h2>
+
+					<div class="footer-contact">
+						<h2>Contacto</h2>
+						<div>
+							<i class="fas fa-map-marker-alt"></i>
+							<p class="footer-location">
+								<a href="{{ route('location') }}">Ver Agencias</a></p>
+						</div>
+						<div>
+							<i class="fas fa-phone-alt"></i>
+							<p class="footer-number">+51 988 069 143</p>
+						</div>
+						<div>
+							<i class="fas fa-envelope"></i>
+							<a href="mailto:contacto@popeyecargo.com" class="footer-email">contacto@popeyecargo.com</a>
+						</div>
+					</div>
+
+					<div class="footer-conditions">
+						<h2>Condiciones</h2>
+						<p>Revisa nuestras <a href="#" class="footer-link">Políticas del servicio</a>, Preguntas Frecuentes y nuestro Calendario de Eventos. Puedes revisar nuestras <a href="#" class="footer-link">Políticas de privacidad</a>, establecidas para la protección de tu información.</p>
 					</div>
 				</div>
-				<div class="footer-nav-wrap">
-                    <a href="{{ route('home') }}" class="footer-link">Inicio</a>
-                    <a href="{{ route('about') }}" class="footer-link">Nosotros</a>
-                    <a href="{{ route('services') }}" class="footer-link">Servicios</a>
-                    <a href="{{ route('location') }}" class="footer-link">Ubícanos</a>
-                    <a href="{{ route('contact') }}" class="footer-link">Contáctanos</a>
-                </div>
-				<div class="footer-rights-wrapper">
-					<div class="footer-copyright">© {{ config('app.name') }} - Todos los derechos reservados {{ now()->year }}</div>
+				<div class="footer-copy-wrapper">
+					<div class="footer-copyright">
+						© {{ config('app.name') }} © {{ now()->year }}. Todos los derechos reservados
+					</div>
 				</div>
 			</div>
 		</div>
@@ -112,6 +139,5 @@
 		<script src="{{ asset('js/jquery.js') }}" type="text/javascript" crossorigin="anonymous"></script>
         <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
 		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-		<script src="{{ asset('js/extra.js') }}" type="text/javascript"></script>
 	</body>
 </html>
